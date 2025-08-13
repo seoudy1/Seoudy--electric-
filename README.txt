@@ -1,21 +1,15 @@
+SEOUDY TECH - Arabic Dark Site (Admin + Public)
+-----------------------------------------------
+- الموقع عربي بالكامل بتصميم داكن وألوان زاهية.
+- استبدال كامل لخدمات الكهرباء بخدمات الإلكترونيات (جوال/كمبيوتر/برامج).
+- تم إدراج الصور التي زودتني بها كلوجو وصور خدمات.
+- لوحة مشرف في /admin/ متصلة بـ Firebase (Auth + Firestore + Storage).
 
-SEOUDY ELECTRIC - الحزمة النهائية (ثابتة HTML)
----------------------------------------------
+خطوات سريعة:
+1) فعّل Firebase: Authentication (Email/Password) + Firestore + Storage.
+2) أنشئ مستخدم المشرف: elmshrky666666@gmail.com / asm1980ASM.
+3) ارفع المجلد هذا على Vercel (Upload Folder) أو عبر GitHub ثم Import إلى Vercel.
+4) رابط لوحة المشرف: https://<your-site>/admin/
 
-محتويات الحزمة:
-- index.html, styles.css, app.js
-- مجلد admin/index.html (لوحة تحكم مبدئية)
-- مجلد assets يحتوي على logo.png, banner.png, ad.png
-
-تشغيل محلي:
-- افتح index.html في المتصفح من هاتفك أو كمبيوتر.
-
-رفع على Vercel من الهاتف (موجز):
-1) فك الضغط عن ZIP في جهازك (إن لزم).
-2) افتح vercel.com وسجّل دخول.
-3) اختر + New Project → Upload → اختر المجلد الذي يحتوي index.html.
-4) اضغط Deploy وانتظر اللينك.
-
-ملاحظات:
-- النموذج يستخدم mailto كحل بسيط لإرسال الرسائل. يمكن دمج EmailJS أو سيرفر SMTP لاحقاً.
-- لو تريد ربط ديناميكي (Firebase، لوحة Admin متطورة، تكامل Tap) أخبرني وسأجهز نسخة React/Firebase كاملة.
+أمان:
+- عدل قواعد Firestore/Storage للسماح بالكتابة فقط للمستخدمين المسجلين.
